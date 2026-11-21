@@ -1,3 +1,3 @@
 export default function PageHero({ eyebrow, title, description }) {
-  return <section className="py-16 md:py-20 bg-paper relative overflow-hidden"><div className="absolute -right-24 -top-24 w-96 h-96 border border-blue-200 rounded-full shadow-lg shadow-blue-100 pointer-events-none"></div><div className="w-full max-w-6xl mx-auto px-6 md:px-8 relative z-10"><span className="inline-flex items-center gap-2 text-brand text-xs font-black tracking-widest uppercase before:w-4 before:h-0.5 before:bg-brand before:rounded">{eyebrow}</span><h1 className="font-display font-bold text-5xl md:text-6xl leading-tight tracking-tight text-ink mt-3 mb-3 max-w-2xl">{title}</h1>{description && <p className="text-blue-600 text-lg max-w-2xl">{description}</p>}</div></section>;
+  return <section className="pagehero"><div className="wrap"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{description && <p>{description}</p>}</div></section>;
 }
