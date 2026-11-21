@@ -13,5 +13,5 @@ export default async function ResourceDetail({ params }) {
     resource = null;
   }
   if (!resource) notFound();
-  return <><Header /><main><article className="pagehero"><div className="wrap max-w-3xl"><span className="eyebrow">Resource</span><h1>{resource.title}</h1>{resource.excerpt && <p>{resource.excerpt}</p>}</div></article><section className="section white"><div className="wrap max-w-3xl whitespace-pre-wrap leading-relaxed">{resource.body}</div></section></main><Footer /></>;
+  return <><Header /><main><article className="py-12 md:py-20 bg-gradient-to-b from-paper to-white"><div className="max-w-3xl mx-auto px-4 md:px-6"><span className="inline-block text-sm font-bold tracking-widest text-brand uppercase mb-4">Resource</span><h1>{resource.title}</h1>{resource.excerpt && <p>{resource.excerpt}</p>}</div></article><section className="py-16 md:py-24 lg:py-32 bg-white"><div className="max-w-3xl mx-auto px-4 md:px-6 whitespace-pre-wrap leading-relaxed">{resource.body}</div></section></main><Footer /></>;
 }
