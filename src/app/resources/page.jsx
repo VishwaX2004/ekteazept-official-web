@@ -1,0 +1,3 @@
+import Header from "@/components/Header"; import Footer from "@/components/Footer"; import PageHero from "@/components/PageHero";
+export const metadata = { title: "Resources" };
+export default function Resources() { return <><Header /><main><PageHero eyebrow="Resources" title="Useful ideas, when they are ready." description="We are preparing a small library of thoughtful guides and updates. Nothing is published here until it is ready." /><section className="section white"><div className="wrap section-head"><div className="icon" style={{margin:"auto"}}>✦</div><h2>More to come.</h2><p>Have a question in the meantime? We would be happy to hear from you.</p></div></section></main><Footer /></>; }

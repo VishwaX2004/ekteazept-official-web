@@ -1,0 +1,29 @@
+{
+  "name": "ektazept-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src scripts --ext .js,.jsx",
+    "create-admin": "node scripts/create-admin.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.20",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.4.5",
+    "mongoose": "8.7.3",
+    "next": "14.2.35",
+    "next-auth": "4.24.10",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.14",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35"
+  }
+}
